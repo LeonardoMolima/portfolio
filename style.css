@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Kaushan+Script&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: #042940;
+}
+
+header{
+    width: 100%;
+    background-color: #042940;
+    position: -webkit-sticky; /* Necessário para funcionar no Safari */
+    position: sticky;
+    top: 0;
+}
+
+nav{
+    background-color: #042940;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 14%;
+    align-items: center;
+    height: 70px;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    color: #DBF227;
+}
+
+nav .logo{
+    font-size: 30px;
+    font-family: Dancing Script;
+    color: #DBF227;
+}
+
+nav h1{
+    font-size: 20px;
+    color: white;
+}
+
+nav span{
+    color: white;
+}
+
+section.info{
+    max-height: fit-content;
+    margin-top: 10%;
+    margin-bottom: 15%;  
+    padding-inline: 14%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+section div.apresentacao{
+    width: 550px;
+    color: white;
+}
+
+div.apresentacao h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+div.apresentacao h2{
+    font-size: 29px;
+    margin-bottom: 10px;
+}
+
+div.apresentacao h3{
+    font-size: 18px;
+}
+
+section div.photo img{
+    border: 6px solid #DBF227;
+    border-radius: 41% 59% 53% 47% / 54% 48% 52% 46% 
+}
+
+div.localizacao{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    align-self: center;
+}
+
+div.localizacao h3{
+    margin-inline: 5px;
+}
+
+a.download-cv{
+    font-size: 20px;
+    font-weight: bold;
+    color:#042940;
+    padding-inline: 25px;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    margin-top: 30px;
+    border: none;
+    border-radius: 4px;
+    background-color: #DBF227;
+    width: 180px;
+    height: 40px;
+}
+
+.social-networks-icon{
+    width: 35px;
+    height: 35px;
+    color: #DBF227;
+}
+
+section.projects{
+    width: 100%;
+    height: fit-content;
+    background-color: #005C53;
+}
+
+section.projects h1{
+    text-align: center;
+    font-size: 50px;
+    color: #DBF227;
+}
+
+section.projects h3{
+    margin-inline: 17%;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+section div.container-projects {
+    padding-top: 90px;
+    max-width: 100%;
+
+}
+
+  .cards-projects {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding-inline: 10%;
+  }
+
+  .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 300px;
+    min-height: 430px;
+    padding: 30px;
+    background-color: #042940;
+    border-radius: 8px;
+  }
+
+  div.card h1{
+    text-align: left;
+    font-size: 20px;
+    color: #DBF227;
+  }
+
+  div.card p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: justify;
+    color: white;
+  }
+
+  div.card img{
+    object-fit: contain;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  div.card span{
+    margin: 5px;
+    padding: 3px;
+    font-size: 15px;
+    border-radius: 4px;
+    border: 1px solid;
+    color: white;
+  }
+
+  div.card .tecnologies{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    margin-bottom: 5px;
+  }
+  
+  div.card .logo-github-projects{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+  }
+
+  div.card a{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #DBF227;
+  }
+
+  .slider {
+    opacity: 0;
+    transition: opacity .2s;
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  footer{
+    width: 100%;
+    height: fit-content;
+    background-color: #042940;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+footer div.container-contacts{
+    margin-top: 40px;
+    padding-inline: 11%;
+    width: 100%;
+    color: white;
+}
+
+div.container-contacts h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+div.container-contacts h2{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+div.container-contacts div{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.container-contacts .contact-icons{
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    color: #DBF227;
+}
+
+footer span{
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+/*RESPONSIVIDADE*/
+
+@media screen and (max-width: 1000px){
+
+    nav{
+        width: 90%;
+    }
+
+    nav .logo{
+        font-size: 20px;
+        font-family: Dancing Script;
+        color: #DBF227;
+    }
+    
+    nav h1{
+        font-size: 10px;
+        color: white;
+    }
+
+    nav ul{
+        font-size: 10px;
+    }
+
+    .social-networks-icon{
+        display: none;
+    }
+
+    section div.apresentacao{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    section div.photo {
+        margin-block: 30px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    section div.photo img{
+        width: 200px;
+        border: 3px solid #DBF227;
+    }
+
+    footer .contacts-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    div.container-contacts h1{
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    
+    div.container-contacts h2{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    div.container-contacts .contact-icons{
+        margin-right: 10px;
+        width: 15px;
+        height: 15px;
+        color: #DBF227;
+    }
+}
+
+@media screen and (max-width: 1080px){
+
+    section div.photo img{
+        width: 185px;
+        border: 3px solid #DBF227;
+    }
+
+}
